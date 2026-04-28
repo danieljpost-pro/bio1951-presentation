@@ -47,6 +47,7 @@ body {
 .navbar-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   max-width: 900px;
   margin: 0 auto;
@@ -60,6 +61,15 @@ body {
 
 .navbar-list a:hover {
   color: #0052a3;
+}
+
+@media (max-width: 600px) {
+  .navbar-list {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 main {
