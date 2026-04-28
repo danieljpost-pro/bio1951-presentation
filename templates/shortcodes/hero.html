@@ -1,0 +1,18 @@
+<section class="hero">
+  <img
+    class="hero-image"
+    src="https://picsum.photos/1600/420?grayscale"
+    alt="Hero image"
+  >
+  <div class="hero-overlay">
+    <h1>
+      {% if page and page.title %}
+        {{ page.title }}
+      {% elif section and section.title %}
+        {{ section.title }}
+      {% else %}
+        {{ config.title }}
+      {% endif %}
+    </h1>
+  </div>
+</section>

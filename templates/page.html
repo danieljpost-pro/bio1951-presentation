@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
+
+{% block extra_head %}
+{% if page.extra and page.extra.stylesheet %}
+<link rel="stylesheet" href="{{ page.extra.stylesheet }}">
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{{ page.content | safe }}
+{% endblock %}

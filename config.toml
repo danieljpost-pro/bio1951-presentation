@@ -1,0 +1,8 @@
+base_url = "https://bio1951-presentation.danieljpost.dev/"
+title = "Bio 1951 Presentation"
+description = "A comprehensive look at Parkinson's Disease"
+default_language = "en"
+compile_sass = true
+
+[markdown]
+external_links_target_blank = true
